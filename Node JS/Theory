@@ -11,4 +11,18 @@ Examples: Downloading a file, copying large amounts of data, or waiting for user
 c) I/O bound tasks are contrasted with CPU bound tasks, which heavily rely on the CPU for processing and can benefit from a faster processor.  Understanding whether
  a task is I/O bound or CPU bound is important for optimizing computer systems and improving performance.
 
+What do the lines like symbols = symbols || SYMBOLS_DEFAULT; do ?
+
+Ans : This code snippet checks if a variable named `symbols` is already defined and assigns a default value if it isn't.
+Here's a breakdown:
+* `symbols = ...`: This assigns a value to the variable `symbols`.
+* `symbols || ...`: This is a shorthand for a conditional statement. It checks if `symbols` has a truthy value (any value except `false`, `0`, `""`, `null`, or 
+`undefined`).
+    * If `symbols` is truthy (already defined with a value), the entire expression evaluates to `symbols` (no change).
+    * If `symbols` is falsy (not defined yet), the expression evaluates to the part after the `||`.
+* `SYMBOLS_DEFAULT`: This represents a default value that will be assigned to `symbols` if it wasn't defined earlier. This value is likely another variable 
+containing the default symbols needed in the program.
+In essence, this line ensures that the `symbols` variable always has a value, even if it wasn't explicitly defined before. It uses a default value defined
+ in `SYMBOLS_DEFAULT`.
+ This pattern is commonly used to set up configuration options or initial states for variables.
 
