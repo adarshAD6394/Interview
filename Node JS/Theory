@@ -1,1 +1,14 @@
 What is I/O ? What are I/O bound task ?
+
+Ans : An I/O bound task, in the world of computers, is one that's limited by the speed of  input/output (I/O) operations rather than the processing power of the
+ central processing unit (CPU).  These tasks spend most of their time waiting for data to be transferred from or to external devices like disks, networks, 
+or even user input,  rather than performing calculations.
+Here's a breakdown of I/O bound tasks:
+
+a) Focus on data transfer: I/O bound tasks are all about moving data around, not necessarily complex computations.
+b) Waiting time is key: The speed of the I/O system dictates how fast the task can be completed. Upgrading the CPU might not help much if the bottleneck is the I/O.
+Examples: Downloading a file, copying large amounts of data, or waiting for user input are all common I/O bound tasks.
+c) I/O bound tasks are contrasted with CPU bound tasks, which heavily rely on the CPU for processing and can benefit from a faster processor.  Understanding whether
+ a task is I/O bound or CPU bound is important for optimizing computer systems and improving performance.
+
+
